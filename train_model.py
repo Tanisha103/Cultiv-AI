@@ -26,7 +26,5 @@ joblib.dump(model, "crop_yield_model.pkl")
 joblib.dump(label_encoder_crop, "label_encoder_crop.pkl")
 joblib.dump(label_encoder_season, "label_encoder_season.pkl")
 joblib.dump(label_encoder_state, "label_encoder_state.pkl")
-
-# Optionally, you can evaluate the model's performance
 score = model.score(X_test, y_test)
 print(f"Model R^2 score: {score}")
