@@ -1,0 +1,23 @@
+.home {
+    margin-top: 50px;
+  }
+  
+  h1 {
+    font-size: 3rem;
+  }
+  
+  p {
+    font-size: 1.5rem;
+    color: #555;
+  }
+  
+  .btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    border-radius: 5px;
+  }
+  
