@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
 import './Predict.css';
-
 function Predict() {
   const [inputData, setInputData] = useState({
     crop: "",
@@ -15,11 +14,9 @@ function Predict() {
     pesticide: ""
   });
   const [prediction, setPrediction] = useState(null);
-
   const handleChange = (e) => {
     setInputData({ ...inputData, [e.target.name]: e.target.value });
   };
-
   const handleSubmit = async () => {
     try {
       const response = await axios.post("http://localhost:5000/predict", inputData);
@@ -28,7 +25,6 @@ function Predict() {
       console.error("Error making prediction:", error);
     }
   };
-
   return (
     <div className="predict">
       <h1>Crop Yield Prediction</h1>
@@ -93,5 +89,4 @@ function Predict() {
     </div>
   );
 }
-
 export default Predict;
